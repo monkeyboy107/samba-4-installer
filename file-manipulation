@@ -1,0 +1,6 @@
+#!/bin/bash
+mv /etc/samba/smb.conf /etc/samba/smb.conf.bak
+cp ./cat-file /etc/samba/smb.conf
+mkdir -p /samba/anonymous
+mkdir -p /srv/samba/guest/
+mkdir -p /srv/samba/demo/

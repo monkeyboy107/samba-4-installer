@@ -1,17 +1,4 @@
 #!/bin/bash
-yum install -y samba samba-client samba-common
-
-mv /etc/samba/smb.conf /etc/samba/smb.conf.bak
-
-cp ./cat-file /etc/samba/smb.conf
-
-mkdir -p /samba/anonymous
-
+bash packages-to-install
+bash file-manipulation
 bash share-add
-
-firewall-cmd --permanent --zone=public --add-service=samba
-firewall-cmd --reload
-
-mkdir -p /srv/samba/guest/
-mkdir -p /srv/samba/demo/
-
