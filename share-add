@@ -1,0 +1,8 @@
+#!/bin/bash
+useradd -M -s /sbin/nologin demoUser
+
+smbpasswd -a demoUser
+smbpasswd -e demoUser
+
+groupadd demoGroup
+usermod -G demoGroup demoUser
