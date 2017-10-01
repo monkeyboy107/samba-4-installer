@@ -10,8 +10,8 @@ for i in range(len(os)):
     if os[i] == 'fedora':
         os = 'fedora'
         break
-    if os[i] == 'ubuntu':
-        os = 'ubuntu'
+    if os[i] == 'Ubuntu':
+        os = 'Ubuntu'
         break
 if os != 'unknown':
     file = open('distro.txt', 'wr')
