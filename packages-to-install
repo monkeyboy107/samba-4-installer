@@ -1,5 +1,5 @@
 #!/bin/bash
-distro=<distro
+distro=<distro.txt
 if ["$distro" = "fedora"]
 then
     dnf install -y samba samba-client samba-common
