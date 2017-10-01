@@ -1,2 +1,16 @@
 #!/bin/bash
-yum install -y samba samba-client samba-common
+distro=<distro
+if ["$distro" = "fedora"]
+then
+    dnf install -y samba samba-client samba-common
+fi
+
+if ["$distro" = "centos"]
+then
+    yum install -y samba samba-client samba-common
+fi
+
+if ["$distro" = "ubuntu"]
+then
+    apt-get install -y samba smbfs
+fi
