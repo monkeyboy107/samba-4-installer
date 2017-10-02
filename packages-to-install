@@ -23,4 +23,4 @@ then
 elif ["ubuntu">"$disro"]
 then
     echo ubuntu
-bash install-wing-repo
+fi
