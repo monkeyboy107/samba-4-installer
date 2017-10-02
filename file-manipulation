@@ -1,6 +1,3 @@
 #!/bin/bash
-mv /etc/samba/smb.conf /etc/samba/smb.conf.bak
-cp ./cat-file /etc/samba/smb.conf
-mkdir -p /samba/anonymous
-mkdir -p /srv/samba/guest/
-mkdir -p /srv/samba/demo/
+rm -rf /etc/krb5.conf
+rm -rf /etc/samba/smb.conf
