@@ -1,7 +1,7 @@
 #!/bin/bash
 python which-distro.py
 distro=$(cat distro.txt)
-if ["centos"="$distro"]
+if [ "centos" = "$distro" ]
 then
     echo centos
     yum install epel-release -y
@@ -20,7 +20,11 @@ then
     yum install perl-Test-Base -y
     yum install python2-crypto 
     yum install samba45-common-tools -y
-elif ["ubuntu">"$disro"]
+elif [ "ubuntu" = "$distro" ]
 then
     echo ubuntu
+elif [ "fedora" = "$distro" ]
+then
+    echo fadora
 fi
+
