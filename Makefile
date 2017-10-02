@@ -1,11 +1,6 @@
-all:
-	make install
-
-install:
+install-ad:
 	sudo bash samab-4-ad-installation
 
-add-share:
-	sudo bash share-add
 
 install-pkg:
 	sudo bash packages-to-install

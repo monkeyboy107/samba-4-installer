@@ -1,4 +1,5 @@
 #!/bin/bash
 bash packages-to-install
 bash file-manipulation
-bash share-add
+samba-tool domain provision --use-rfc2307 --interactive
+
