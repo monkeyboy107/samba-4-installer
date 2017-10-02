@@ -23,8 +23,27 @@ then
 elif [ "ubuntu" = "$distro" ]
 then
     echo ubuntu
+    sudo apt-get install samba -y 
+    sudo apt-get libpam-winbind -y 
+    
 elif [ "fedora" = "$distro" ]
 then
     echo fadora
+yum install epel-release -y
+    dnf install vim -y
+    dnf install wget -y 
+    dnf install authconfig -y 
+    dnf install krb5-workstation -y
+    dnf install samba45 -y
+    dnf install samba45-winbind-clients -y
+    dnf install samba45-winbind samba45-client -y
+    dnf install samba45-dc -y
+    dnf install samba45-pidl -y 
+    dnf install samba45-python -y
+    dnf install samba45-winbind-krb5-locator -y
+    dnf install perl-Parse-Yapp -y 
+    dnf install perl-Test-Base -y
+    dnf install python2-crypto 
+    dnf install samba45-common-tools -y
 fi
 
