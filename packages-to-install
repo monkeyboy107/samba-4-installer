@@ -1,6 +1,6 @@
 #!/bin/bash
 python which-distro.py
-distro=distro.txt
+distro=$(cat distro.txt)
 if ["cento"="$distro"]
 then
     echo centos
