@@ -29,7 +29,7 @@ then
 elif [ "fedora" = "$distro" ]
 then
     echo fadora
-yum install epel-release -y
+    #dnf install epel-release -y
     dnf install vim -y
     dnf install wget -y 
     dnf install authconfig -y 
