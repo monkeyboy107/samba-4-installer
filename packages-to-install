@@ -18,7 +18,7 @@ then
     yum install samba45-winbind-krb5-locator -y
     yum install perl-Parse-Yapp -y 
     yum install perl-Test-Base -y
-    yum install python2-crypto 
+    yum install python2-crypto -y
     yum install samba45-common-tools -y
 elif [ "ubuntu" = "$distro" ]
 then
@@ -43,7 +43,7 @@ yum install epel-release -y
     dnf install samba45-winbind-krb5-locator -y
     dnf install perl-Parse-Yapp -y 
     dnf install perl-Test-Base -y
-    dnf install python2-crypto 
+    dnf install python2-crypto -y
     dnf install samba45-common-tools -y
 fi
 
