@@ -1,0 +1,3 @@
+#!/bin/bash
+rm -rf /etc/krb5.conf
+rm -rf /etc/samba/smb.conf

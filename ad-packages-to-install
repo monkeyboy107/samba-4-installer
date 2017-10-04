@@ -1,0 +1,19 @@
+#!/bin/bash
+echo installing samba 4 AD
+python which-distro.py
+distro=$(cat distro.txt)
+if [ "centos" = "$distro" ]
+then
+    bash ./CentOS/ad-packages-to-install
+elif [ "ubuntu" = "$distro" ]
+then
+    bash ./Ubuntu/ad-packages-to-install
+    
+elif [ "fedora" = "$distro" ]
+then
+    bash ./Fedora/ad-packages-to-install
+elif [ "debian" = "$distro" ]
+then
+    bash ./Debian/ad-packages-to-install
+
+fi
