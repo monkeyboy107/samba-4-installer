@@ -1,6 +1,0 @@
-#!/bin/bash
-cd /etc/yum.repos.d/
-wget http://wing-net.ddo.jp/wing/7/EL7.wing.repo
-sed -i 's@enabled=0@enabled=1@g' /etc/yum.repos.d/EL7.wing.repo
-yum clean all
-
