@@ -1,9 +1,0 @@
-#!/bin/bash
-apt-get install -y update
-apt-get install -y samba
-apt-get install -y krb5-user
-apt-get install -y krb5-config
-apt-get install -y winbind
-apt-get install -y libpam-winbind
-apt-get install -y libnss-winbind
-
