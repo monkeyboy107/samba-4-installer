@@ -1,5 +1,5 @@
 install-ad:
-	sudo bash samab-4-ad-installation
+	sudo bash samba-4-ad-installation
 
 install-pkg:
 	sudo bash packages-to-install
