@@ -10,7 +10,7 @@ for i in range(len(os)):
     if os[i] == 'fedora':
         os = 'fedora'
         break
-    if os[i] == 'ubuntu':
+    if os[i] == 'Ubuntu':
         os = 'ubuntu'
         break
 if os != 'unknown':

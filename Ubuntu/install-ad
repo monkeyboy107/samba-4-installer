@@ -1,0 +1,5 @@
+#!/bin/bash
+bash ad-packages-to-install
+bash stop-samba-4-ad-services
+bash configure-samba-4-ad
+bash start-samba-4-ad-services

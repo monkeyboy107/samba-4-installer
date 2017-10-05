@@ -1,0 +1,4 @@
+#!/bin/bash
+systemctl start samba-ad-dc.service
+systemctl status samba-ad-dc.service
+systemctl enable samba-ad-dc.service
