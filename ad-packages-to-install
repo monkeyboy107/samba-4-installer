@@ -4,16 +4,16 @@ python which-distro.py
 distro=$(cat distro.txt)
 if [ "centos" = "$distro" ]
 then
-    bash ./CentOS/ad-packages-to-install
+    bash ./CentOS/install-ad
 elif [ "ubuntu" = "$distro" ]
 then
-    bash ./Ubuntu/ad-packages-to-install
+    bash ./Ubuntu/install-ad
     
 elif [ "fedora" = "$distro" ]
 then
-    bash ./Fedora/ad-packages-to-install
+    bash ./Fedora/install-ad
 elif [ "debian" = "$distro" ]
 then
-    bash ./Debian/ad-packages-to-install
+    bash ./Debian/install-ad
 
 fi
