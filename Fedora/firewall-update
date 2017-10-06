@@ -1,8 +1,22 @@
 #!/bin/bash
-firewall-cmd --add-port=53/tcp --permanent;firewall-cmd --add-port=53/udp --permanent;firewall-cmd --add-port=88/tcp --permanent;firewall-cmd --add-port=88/udp --permanent; \
-firewall-cmd --add-port=135/tcp --permanent;firewall-cmd --add-port=137-138/udp --permanent;firewall-cmd --add-port=139/tcp --permanent; \
-firewall-cmd --add-port=389/tcp --permanent;firewall-cmd --add-port=389/udp --permanent;firewall-cmd --add-port=445/tcp --permanent; \
-firewall-cmd --add-port=464/tcp --permanent;firewall-cmd --add-port=464/udp --permanent;firewall-cmd --add-port=636/tcp --permanent; \
-firewall-cmd --add-port=1024-3500/tcp --permanent;firewall-cmd --add-port=3268-3269/tcp --permanent
-
-firewall-cmd --reload
+####################################################
+#Programmer: Isaac Kerley            
+#Updated date: 10/6/17               
+####################Main############################
+firewall-cmd --add-port=53/tcp --permanent         #Adds DNS with TCP
+firewall-cmd --add-port=53/udp --permanent         #Adds DNS with UDP
+firewall-cmd --add-port=88/tcp --permanent         #Adds Kerberos TCP
+firewall-cmd --add-port=88/udp --permanent         #Adds Kerberos UDP
+firewall-cmd --add-port=135/tcp --permanent
+firewall-cmd --add-port=137-138/udp --permanent    #Adds NetBios UDP
+firewall-cmd --add-port=139/tcp --permanent        #Adds NetBios TCP
+firewall-cmd --add-port=389/tcp --permanent        #Adds LDAP TCP
+firewall-cmd --add-port=389/udp --permanent        #Adds LDAP UDP
+firewall-cmd --add-port=445/tcp --permanent        #Adds Windows share TCP
+firewall-cmd --add-port=464/tcp --permanent        #Adds Kerberose passwd TCP
+firewall-cmd --add-port=464/udp --permanent        #Adds Kerberose passwd UDP
+firewall-cmd --add-port=636/tcp --permanent        #Adds LDAP for SSL/TLC TCP
+firewall-cmd --add-port=1024-3500/tcp --permanent
+firewall-cmd --add-port=3268-3269/tcp --permanent
+####################################################
+firewall-cmd --reload                              #Reloads the firewall 

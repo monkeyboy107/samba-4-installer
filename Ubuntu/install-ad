@@ -1,4 +1,8 @@
 #!/bin/bash
+######################################
+#Programmer: Isaac Kerley
+#Updated date: 10/6/17
+###############Main###################
 bash ad-packages-to-install
 bash stop-samba-4-ad-services
 bash configure-samba-4-ad

@@ -1,8 +1,14 @@
 #!/bin/bash
-echo installing samba 4 AD
-python which-distro.py
-distro=$(cat distro.txt)
-if [ "centos" = "$distro" ]
+###################################################
+#Programmer: Isaac Kerley
+#Updated date: 10/6/17
+####################################################
+echo installing samba 4 AD                         #Echos what it's doing
+python which-distro.py                             #Starts off the python script to figure out what disro is running to figure out what distro that it is 
+#######################Varible######################
+distro=$(cat distro.txt)                           #Assigns distro varible from the content of the distro.txt folder
+#######################Main#########################
+if [ "centos" = "$distro" ]                        #Checks to see if it is CentOS
 then
     yum install epel-release -y
     yum install vim -y
@@ -11,7 +17,7 @@ then
     yum install krb5-workstation -y
     yum install samba45 -y
     yum install samba45-winbind-clients -y
-    yum install samba45-winbind samba45-client -y
+    yum install samba45-winbind samba45-client -y 
     yum install samba45-dc -y
     yum install samba45-pidl -y 
     yum install samba45-python -y
@@ -20,7 +26,8 @@ then
     yum install perl-Test-Base -y
     yum install python2-crypto -y
     yum install samba45-common-tools -y
-elif [ "ubuntu" = "$distro" ]
+
+elif [ "ubuntu" = "$distro" ]                      #Checks to see if it is Ubuntu
 then
     apt-get install -y update
     apt-get install -y samba
@@ -29,7 +36,7 @@ then
     apt-getinstall -y winbind
     apt-getinstall -y libpam-winbind
     apt-getinstall -y libnss-winbind
-elif [ "fedora" = "$distro" ]
+elif [ "fedora" = "$distro" ]                      #Checks to see if it is Fedora
 then
     dnf install vim -y
     dnf install wget -y 
@@ -37,7 +44,7 @@ then
     dnf install krb5-workstation -y
     dnf install samba45 -y
     dnf install samba45-winbind-clients -y
-    dnf install samba45-winbind samba45-client -y
+    dnf install samba45-winbind samba45-client -y 
     dnf install samba45-dc -y
     dnf install samba45-pidl -y 
     dnf install samba45-python -y
@@ -46,8 +53,8 @@ then
     dnf install perl-Test-Base -y
     dnf install python2-crypto -y
     dnf install samba45-common-tools -y
-elif [ "debian" = "$distro" ]
+
+elif [ "debian" = "$distro" ]                      #Checks to see if it is Debian
 then
     bash ./Debian/install-ad
-
 fi

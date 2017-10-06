@@ -1,9 +1,9 @@
 #!/usr/bin/python
 ######################################
-#Programmer: Isaac Kerley            #
-#Updated date: 10/6/17               #
+#Programmer: Isaac Kerley
+#Updated date: 10/6/17
 ##############Imports#################
-import platform                      #
+import platform                      
 #############Varibles#################
 distro = 'unknown'                   #Defines the distro var for distro 
 platform = platform.platform()       #Gets what the platform is from platform library
@@ -26,8 +26,8 @@ for i in range(len(distro)):         #Iterates through the distro var to see wha
         distro = unknown             #Defines distro as distro unknown
         break                        #Leaves the loop
 ######################################
-if distro != 'unknown':              #
-    file = open('distro.txt', 'wr')  #
-    file.write(distro)               #
-    print distro                     #
+if distro != 'unknown':              
+    file = open('distro.txt', 'wr')  
+    file.write(distro)               
+    print distro                     
 ######################################

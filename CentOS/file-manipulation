@@ -1,3 +1,6 @@
 #!/bin/bash
+######################################
+#Programmer: Isaac Kerley
+#Updated date: 10/6/17
 rm -rf /etc/krb5.conf
 rm -rf /etc/samba/smb.conf

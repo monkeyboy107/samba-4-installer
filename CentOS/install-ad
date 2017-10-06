@@ -1,5 +1,9 @@
 #!/bin/bash
-bash packages-to-install
-bash file-manipulation
-samba-tool domain provision --use-rfc2307 --interactive
+###########################################################
+#Programmer: Isaac Kerley
+#Updated date: 10/6/17
+#########################Main##############################
+bash ../samba-4-ad-installation                           #Starts off the installation script
+bash file-manipulation                                    #Starts off the file changing script
+samba-tool domain provision --use-rfc2307 --interactive   #Configures AD
 

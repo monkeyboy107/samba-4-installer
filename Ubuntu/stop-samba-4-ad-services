@@ -1,4 +1,8 @@
 #!/bin/bash
-systemctl stop samba-ad-dc.service smbd.service nmbd.service winbind.service
-systemctl disable samba-ad-dc.service smbd.service nmbd.service winbind.service
+######################################
+#Programmer: Isaac Kerley
+#Updated date: 10/6/17
+###############Main###################
+systemctl stop samba-ad-dc.service smbd.service nmbd.service winbind.service    #Stops the samba-ad-dc.service smbd.service nmbd.service winbind.service services for configuring 
+systemctl disable samba-ad-dc.service smbd.service nmbd.service winbind.service #Disables the samba-ad-dc.service smbd.service nmbd.service winbind.service for configuring
 

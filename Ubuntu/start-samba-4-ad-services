@@ -1,4 +1,8 @@
 #!/bin/bash
-systemctl start samba-ad-dc.service
-systemctl status samba-ad-dc.service
-systemctl enable samba-ad-dc.service
+######################################
+#Programmer: Isaac Kerley
+#Updated date: 10/6/17
+###############Main###################
+systemctl start samba-ad-dc.service  #Starts the samba-ad-dc services
+systemctl status samba-ad-dc.service #Checks the status samba-ad-dc services
+systemctl enable samba-ad-dc.service #Enables the samba-ad-dc services service so if the computer restarts it will 
